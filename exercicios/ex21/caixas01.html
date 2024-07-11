@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelko de Caixas</title>
+    <style>
+    h1 { /*Box-Level*/
+
+        background-color: rgba(140, 245, 4, 0.767);
+
+        height: 300px;
+        width: 300px;
+
+
+        /*border-width: 10px;
+        border-style: solid;
+        border-color: darkcyan; */
+
+        /* Simplificando os BORDERS*/
+        border: 10px solid darkred;
+    /*------------------------------------------------------------------------*/  
+             /*ORDEM PARA SIMPLIFICAR
+        padding-top: 10px ;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;*/
+        
+         /* Simplificando os PADDING*/
+        padding: 10px 10px 10px 10px; /*se tudo for a msm medida
+        é so colocar 10px*/
+/*---------------------------------------------------------------------*/
+       /* margin-top: 10px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+
+        /* Simplificando os MARGIN*/
+        margin: 20px 20px 40px 20px;
+/*------------------------------------------------------------------------------*/
+
+        /*outline-width: 5px;
+        outline-style: dashed;
+        outline-color: black;*/
+      
+        outline: 10px dashed black;
+    }
+
+    a { /*Inline-Level*/
+
+       /* display: block 10px;*/
+
+        border-width: 10px;
+        border-style: groove;
+        border-color: rgb(238, 255, 0);
+
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+    }
+    </style>
+</head>
+<body>
+    <h1>exemplo de caixas Box-Level</h1>
+<p>Paragrafos tambem sao exemplos de Box-level,
+   mas os <a href="https://www.facebook.com/profile.php?id=61559837160314">
+    Links sao exemplos de caixas Inline</a>.
+    vamos ver como tudo isso funciona</p>
+
+ </body>
+</html>

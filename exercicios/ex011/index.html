@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <H1>Imagens dinamicas</H1>
+    <p>tente abrir esse site em varios dispositivos
+        diferentes ou simplismente aumente e diminua o
+        tamanho do seu navegador.
+    </p>
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem Flexivel">
+    </picture>
+    <h1>reproduzindo audios</h1>
+    <p>vamos apremder a reproduzir audios em HTML5</p>
+    <audio src="midia/Drop the Tapes - TrackTribe.mp3" controls autoplay></audio>
+    <!--formatos de audio: MP3 WAV OGG-->
+    <p>outra forma de colocar audio</p>
+
+    <audio preload="metadata" autoplay >
+        <source src="midia/Drop the Tapes - TrackTribe.mp3" type="audio/MP3">
+        <p>infelizmente seu navegador nao foi capaz de 
+            reproduzir o audio, <a href="midia/guanacast-33.mp3">clik Aqui para baixar o arquivo</a>
+        </p>
+    </audio>
+    <!--se o arquivo da musica nao abrir no MP3
+        ele vai tentar abrir no OGG,mas se ele nao conseguir,
+    ele vai tentar abri no WAV. se o arquivo nao abrir em 
+nenhum coloque o link da musica para o pessoal ver -->
+</body>
+</html>
